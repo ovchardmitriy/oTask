@@ -1,0 +1,175 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    padding-top: 20px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#app-container {
+    max-width: 1000px;
+    min-width: 300px;
+    margin: 0 auto 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.topic-header {
+    position: relative;
+    background-color: #f7f7f9;
+}
+
+.tasks-container {
+    border-top: 1px solid #ddd;
+}
+
+.topic-container {  
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    -webkit-border-top-right-radius: 3px;
+    -webkit-border-top-left-radius: 3px;
+    -moz-border-top-right-radius: 3px;
+    -moz-border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+}
+
+.topic-checker,
+.task-checker {
+    position:absolute; 
+    top:50%;
+    margin-top: -14px;
+    margin-left: 10px;
+    padding-top: 4px;
+}
+
+.task-title,
+.topic-title {
+    padding: 4px 0 0 10px;
+    color: #686767;
+}
+
+.topic-title {
+    min-height: 1.15em;
+    margin-left: 30px;
+    margin-right: 40px;
+    font-size: 1.15em;
+}
+
+.task-title {
+    margin-left: 30px;
+    margin-right: 70px;
+    font-size: 1.0em;
+}
+
+textarea {
+    width: 100%;
+    font-family: inherit;
+    font-size: inherit;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: #858484;
+}
+
+.task-closer,
+.topic-closer {
+    position:absolute;
+    right: 0;
+    top:50%;
+    margin-top: -12px;
+    margin-right: 10px;
+    padding-top: 4px;
+}
+
+.task-info,
+.common-info {
+    clear: both;
+    min-height: 18px;
+    width: 100%;
+    color: #8F8C8C;
+    font-size: 0.7em;
+    line-height: 18px;
+}
+
+.task-info span,
+.common-info span {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.tasks li {
+    position: relative;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    width: 100%;
+    border-left: 5px solid #eee;
+    list-style-type: none;
+}
+
+.tasks li:hover {
+    background-color: #f7f7f9;
+}
+
+.tasks {
+    margin: 0;
+}
+
+.done {
+    text-decoration: line-through;
+}
+
+.closer-icon {
+    background-position: -96px -128px;
+}
+
+.play-icon {
+    margin-right: 10px; 
+    background-position: 0 -160px;
+}
+
+.pause-icon {
+    margin-right: 10px; 
+    background-position: -16px -160px;
+}
+
+.plus-icon {
+    margin-left: 0px; 
+    background-position: -32px -128px;
+}
+
+.pencil-icon {
+    background-position: -64px -112px;
+}
+
+.icon {
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    background-image: url("smoothness/images/ui-icons_888888_256x240.png");
+    cursor: pointer;
+}
+
+.icon:hover {
+    background-image: url("smoothness/images/ui-icons_454545_256x240.png");
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden !important;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.add-task {
+    height: 20px;
+    margin-left: 57px;
+    margin-top: 5px;
+    color: #8F8C8C;
+    cursor: pointer;
+    font-size: 0.8em;
+    line-height: 20px;
+}
